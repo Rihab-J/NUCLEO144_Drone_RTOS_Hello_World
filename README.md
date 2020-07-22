@@ -1,0 +1,1 @@
+This is a basic example to test the Real Time Os "Drone" in embedded rust using STM32F412 Nucleo boaed 
