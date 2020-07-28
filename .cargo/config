@@ -1,4 +1,4 @@
-[target.'cfg(target_os = "thumbv7em-none-eabihf")']
+[target.'cfg(target_os = "none")']
 runner = 'gdb-multiarch -q -x openocd.gdb'
 rustflags = [
     "-C", "linker=drone-ld",
