@@ -22,9 +22,11 @@ pools = [
 [probe]
 gdb-client-command = "gdb-multiarch"
 
-[probe.bmp]
-device = "stm32f412"
-gdb-endpoint = "/dev/ttyACM0"
+[probe.openocd]
+command = "openocd"
+port = 3333
+arguments = ["-f", "interface/stlink-v2-1.cfg", "-f", "target/stm32f4x.cfg"]
+
 
 
 [log.swo]
