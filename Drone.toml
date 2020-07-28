@@ -24,9 +24,10 @@ gdb-client-command = "gdb-multiarch"
 
 [probe.bmp]
 device = "stm32f412"
-gdb-endpoint = "/dev/ttyACM1"
+gdb-endpoint = "/dev/ttyACM0"
+
 
 [log.swo]
 reset-freq = 16000000
 baud-rate = 115200
-serial-endpoint = "/dev/ttyACM1"
+serial-endpoint = "/dev/ttyACM0"

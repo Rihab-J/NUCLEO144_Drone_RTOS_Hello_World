@@ -1,8 +1,5 @@
 [target.'cfg(target_os = "thumbv7em-none-eabihf")']
-runner = 'gdb-multiarch -q -x openocd.gdb'
+rustrunner= "gdb-multiarch -q -x openocd.gdb"
 rustflags = [
     "-C", "linker=drone-ld",
 ]
-
-[build]
-target = "thumbv7em-none-eabihf"
