@@ -25,13 +25,9 @@ gdb-client-command = "gdb-multiarch"
 [probe.openocd]
 command = "openocd"
 port = 3333
-<<<<<<< HEAD
 arguments = ["-f", "interface/stlink-v2-1.cfg", "-f", "target/stm32f4x.cfg"]
 
 
-=======
-arguments = ["-f", "interface/stlink.cfg", "-f", "target/stm32f4x.cfg"]
->>>>>>> c3d8ff8605a490a33dce93530509fba48adf955b
 
 [log.swo]
 reset-freq = 16000000
