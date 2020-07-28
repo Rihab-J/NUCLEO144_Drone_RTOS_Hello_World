@@ -1,8 +1,4 @@
 [target.'cfg(target_os = "none")']
-<<<<<<< HEAD
-=======
-runner = 'gdb-multiarch -q -x openocd.gdb'
->>>>>>> c3d8ff8605a490a33dce93530509fba48adf955b
 rustflags = [
     "-C", "linker=drone-ld",
 ]
