@@ -10,6 +10,7 @@ use hello_world::{
     Regs,
 };
 
+
 /// The vector table.
 #[no_mangle]
 pub static VTABLE: Vtable = Vtable::new(Handlers { reset });

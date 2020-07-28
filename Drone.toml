@@ -30,4 +30,4 @@ arguments = ["-f", "interface/stlink.cfg", "-f", "target/stm32f4x.cfg"]
 [log.swo]
 reset-freq = 16000000
 baud-rate = 115200
-serial-endpoint = "/dev/ttyACM1"
+serial-endpoint = "/dev/ttyACM0"
