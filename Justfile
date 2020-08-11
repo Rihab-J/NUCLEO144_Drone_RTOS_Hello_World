@@ -3,6 +3,7 @@ target := 'thumbv7em-none-eabihf'
 features := ''
 name := `basename $(pwd)`
 release_bin := "target/" + target + "/release/" + name
+debug_bin := "target/" + target + "/debug/" + name
 
 # Install dependencies
 deps:
@@ -25,6 +26,10 @@ lint:
 # Build the binary
 build:
 	drone env {{target}} -- cargo build --features "{{features}}" --release
+
+build-debug:
+	drone env {{target}} -- cargo build --features "{{features}}"
+
 
 # Build the documentation
 doc:
@@ -61,6 +66,9 @@ reset:
 # Write the binary to ROM
 flash: build
 	drone flash {{release_bin}}
+flash-debug: build-debug
+	drone flash {{debug_bin}}
+
 
 # Run a GDB session
 gdb:
