@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "$@"
+exec gdb-multiarch /home/rihab/Desktop/hello-world/target/thumbv7em-none-eabihf/release/hello-world "$@"
