@@ -20,7 +20,7 @@ pools = [
 ]
 
 [probe]
-gdb-client-command = "gdb-multiarch"
+gdb-client-command = "./gdb-arm"
 
 [probe.openocd]
 command = "openocd"
@@ -28,8 +28,6 @@ port = 3333
 arguments = ["-f", "interface/stlink-v2-1.cfg", "-f", "target/stm32f4x.cfg"]
 
 
-
 [log.swo]
 reset-freq = 16000000
 baud-rate = 115200
-serial-endpoint = "/dev/ttyACM0"
